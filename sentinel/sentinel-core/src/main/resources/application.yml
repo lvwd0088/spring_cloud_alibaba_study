@@ -1,0 +1,9 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: sentinel-core
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8080
