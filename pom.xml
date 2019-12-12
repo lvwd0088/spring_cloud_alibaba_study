@@ -6,6 +6,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>sentinel</module>
+        <module>nacos</module>
+        <module>nacos-config</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -54,6 +56,12 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+            <version>${alibaba.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
             <version>${alibaba.version}</version>
         </dependency>
 
