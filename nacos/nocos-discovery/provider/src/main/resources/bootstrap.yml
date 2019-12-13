@@ -1,0 +1,9 @@
+server:
+  port: 8003
+spring:
+  application:
+    name: provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848

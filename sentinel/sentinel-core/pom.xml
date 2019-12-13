@@ -11,5 +11,11 @@
 
     <artifactId>sentinel-core</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
