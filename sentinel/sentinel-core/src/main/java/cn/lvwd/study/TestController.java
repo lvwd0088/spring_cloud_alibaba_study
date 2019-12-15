@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     @GetMapping("hello")
-    @SentinelResource("hello")
+    @SentinelResource( value = "hello", blockHandler = "handleException", blockHandlerClass = ExceptionUtil.class)
     public String hello(){
         return "hello Sentinel";
     }
