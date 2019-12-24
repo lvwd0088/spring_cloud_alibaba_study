@@ -1,0 +1,25 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: gateway
+  cloud:
+    sentinel:
+      filter:
+        enabled: false
+      transport:
+        dashboard: localhost:8080
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    gateway:
+      routes:
+        - id: provider
+          uri: lb://provider
+          predicates:
+            - Path=/provider/**
+          filters:
+            - StripPrefix=1
+      enabled: true
+server:
+  port: 8001

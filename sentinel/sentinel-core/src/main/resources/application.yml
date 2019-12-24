@@ -1,9 +1,12 @@
 server:
-  port: 8001
+  port: 8002
 spring:
   application:
     name: sentinel-core
   cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
     sentinel:
       transport:
         dashboard: localhost:8080
