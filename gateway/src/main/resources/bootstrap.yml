@@ -9,6 +9,14 @@ spring:
         enabled: false
       transport:
         dashboard: localhost:8080
+      datasource:
+        flow:
+          nacos:
+            server-addr: localhost:8848
+            data-id: sentinel-gw-flow
+            group-id: DEFAULT_GROUP
+            data-type: json
+            rule-type: gw-flow
     nacos:
       discovery:
         server-addr: localhost:8848

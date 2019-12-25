@@ -1,0 +1,12 @@
+dubbo:
+  scan:
+    base-packages: cn.lvwd.study.service
+  registry:
+    address:
+  protocol:
+    name: dubbo
+    port: -1
+
+feign:
+  hystrix:
+    enabled: true

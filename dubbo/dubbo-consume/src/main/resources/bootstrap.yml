@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: dubbo_provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+server:
+  port: 8009
