@@ -7,3 +7,12 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848
+opentracing:
+  jaeger:
+    enabled: true
+    log-spans: true
+    const-sampler:
+      decision: true
+    udp-sender:
+      host: localhost
+      port: 6831

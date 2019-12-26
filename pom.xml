@@ -138,6 +138,12 @@
             <version>28.1-jre</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/io.opentracing.contrib/opentracing-spring-jaeger-cloud-starter -->
+        <dependency>
+            <groupId>io.opentracing.contrib</groupId>
+            <artifactId>opentracing-spring-jaeger-cloud-starter</artifactId>
+            <version>2.0.3</version>
+        </dependency>
 
     </dependencies>
 
