@@ -1,8 +1,8 @@
 server:
-  port: 8007
+  port: 8008
 spring:
   application:
-    name: rockermq-consumer
+    name: rockermq-producer
   cloud:
     nacos:
       discovery:

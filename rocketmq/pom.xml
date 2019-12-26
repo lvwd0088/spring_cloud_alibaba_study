@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>rocket-consumer</module>
+        <module>rocker-producer</module>
     </modules>
 
 

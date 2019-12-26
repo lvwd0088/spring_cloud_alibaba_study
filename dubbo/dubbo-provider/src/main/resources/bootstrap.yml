@@ -1,6 +1,6 @@
 spring:
   application:
-    name: dubbo_consumer
+    name: dubbo_provider
   cloud:
     nacos:
       discovery:
@@ -8,4 +8,4 @@ spring:
   main:
     allow-bean-definition-overriding: true
 server:
-  port: 8010
+  port: 8009

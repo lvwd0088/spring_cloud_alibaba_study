@@ -1,11 +1,6 @@
 dubbo:
-  scan:
-    base-packages: cn.lvwd.study.service
   registry:
     address: spring-cloud://localhost
-  protocol:
-    name: dubbo
-    port: -1
   cloud:
     subscribed-services: dubbo_provider
 
