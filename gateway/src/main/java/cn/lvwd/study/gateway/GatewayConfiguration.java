@@ -1,5 +1,8 @@
 package cn.lvwd.study.gateway;
 
+import cn.lvwd.study.gateway.filter.PrintFilter;
+import cn.lvwd.study.gateway.filter.ResponseTestFilter;
+import cn.lvwd.study.gateway.filter.TokenFilter;
 import com.alibaba.csp.sentinel.adapter.gateway.sc.SentinelGatewayFilter;
 import com.alibaba.csp.sentinel.adapter.gateway.sc.exception.SentinelGatewayBlockExceptionHandler;
 import org.springframework.beans.factory.ObjectProvider;
@@ -37,10 +40,25 @@ public class GatewayConfiguration {
         //return new SentinelGatewayBlockExceptionHandler(viewResolvers, serverCodecConfigurer);
     }
 
+//    @Bean
+//    @Order(-1)
+//    public GlobalFilter sentinelGatewayFilter() {
+//        return new SentinelGatewayFilter();
+//    }
+//
+//    @Bean
+//    public PrintFilter printFilter(){
+//        return new PrintFilter();
+//    }
+//
+//    @Bean
+//    public ResponseTestFilter responseTestFilter(){
+//        return new ResponseTestFilter();
+//    }
+
     @Bean
-    @Order(-1)
-    public GlobalFilter sentinelGatewayFilter() {
-        return new SentinelGatewayFilter();
+    public TokenFilter tokenFilter(){
+        return new TokenFilter();
     }
 
 }
